@@ -5,6 +5,7 @@ const screenWidth = 800
 const screenHeight = 450
 
 r.InitWindow(screenWidth, screenHeight, 'raylib [async] example - async game-loop')
+r.SetTargetFPS(0)
 
 while(await MaintainFPS(60)) {
   r.BeginDrawing()
