@@ -14,7 +14,7 @@ while(fps = await MaintainFPS(60)) {
   r.DrawText('Congrats! You created your first window!', 190, 200, 20, r.LIGHTGRAY)
   
   // this is close to correct FPS
-  r.DrawText(fps.toString(), screenWidth - 100, 10, 20, r.BLACK)
+  r.DrawText(fps.toFixed(2).toString() + ' (real FPS)', 10, screenHeight - 30, 20, r.BLACK)
   
   // this is inaccurate
   r.DrawFPS(10, 10)

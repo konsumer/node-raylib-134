@@ -5,6 +5,7 @@ export const wait = time => new Promise((resolve, reject) => { setTimeout(resolv
 
 let i = 0
 export async function MaintainFPS (targetFPS) {
+  // only do it every-other frame
   const timetarget = 1 / targetFPS
   const timeframe = r.GetFrameTime()
   const waittime = (timetarget - timeframe) * 2000
