@@ -5,7 +5,6 @@ const screenWidth = 800
 const screenHeight = 450
 
 r.InitWindow(screenWidth, screenHeight, 'raylib [async] example - async game-loop')
-r.SetTargetFPS(0)
 
 let fps = 0
 while(fps = await MaintainFPS(60)) {
